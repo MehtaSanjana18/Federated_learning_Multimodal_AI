@@ -1,0 +1,28 @@
+# NeuroShield AI — Requirements
+# Privacy-Preserving Multimodal Mental Health Risk Detection System
+# Author: Sanjana Mehta | IIT Gandhinagar
+
+# ── Core Framework ────────────────────────────────────────────
+streamlit>=1.33.0              # Web app framework (>=1.33 required for st.audio_input)
+
+# ── Numerical Computing ───────────────────────────────────────
+numpy>=1.24.0                  # Array operations, FedAvg aggregation
+
+# ── Computer Vision ───────────────────────────────────────────
+opencv-python>=4.8.0           # Image decoding and processing
+deepface>=0.0.79               # Facial emotion recognition (VGG-Face + MTCNN)
+
+# ── Audio Processing ──────────────────────────────────────────
+librosa>=0.10.0                # Real audio feature extraction (MFCCs, pitch, ZCR, spectral)
+soundfile>=0.12.1              # Audio file loading (WAV, FLAC, OGG)
+
+# ── NLP & Transformers ────────────────────────────────────────
+transformers>=4.35.0           # DistilBERT (SST-2) + DistilRoBERTa (GoEmotions)
+torch>=2.0.0                   # PyTorch backend for transformer models
+
+# ── Machine Learning ──────────────────────────────────────────
+scikit-learn>=1.3.0            # Utility ML functions
+
+# ── Utilities ─────────────────────────────────────────────────
+tf-keras>=2.15.0               # Required by DeepFace backend
+pillow>=10.0.0                 # Image handling
